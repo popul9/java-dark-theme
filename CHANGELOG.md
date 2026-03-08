@@ -4,7 +4,7 @@
 
 ### Initial Release
 
-- IntelliJ-Inspired dark theme for Java
+- IntelliJ-Inspired dark theme for Java and Kotlin
 - Darcula-style editor colors
-- Semantic highlighting for Java (classes, methods, annotations, etc.)
-- Optimized for Spring Boot / Java development
+- Semantic highlighting for Java and Kotlin (classes, methods, annotations, etc.)
+- Optimized for Java and Kotlin development

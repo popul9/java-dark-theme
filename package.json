@@ -2,8 +2,9 @@
     "name": "java-dark-theme",
     "displayName": "Java Dark Theme",
     "description": "IntelliJ-Inspired dark theme for Java and Kotlin",
-    "version": "0.0.1",
-    "publisher": "popul9",
+    "version": "1.0.0",
+    "publisher": "heejunnet",
+    "license": "MIT",
     "engines": {
         "vscode": "^1.70.0"
     },

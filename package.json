@@ -1,0 +1,39 @@
+{
+    "name": "java-dark-theme",
+    "displayName": "Java Dark Theme",
+    "description": "IntelliJ-Inspired dark theme for Java and Kotlin",
+    "version": "0.0.1",
+    "publisher": "heejunmoon",
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "theme",
+        "dark",
+        "java",
+        "kotlin",
+        "intellij",
+        "darcula"
+    ],
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#2B2B2B",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/YOUR_GITHUB_USERNAME/java-dark-theme"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Java Dark Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/java-dark-theme-color-theme.json"
+            }
+        ]
+    }
+}

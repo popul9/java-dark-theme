@@ -1,0 +1,299 @@
+{
+    "name": "Java Dark Theme",
+    "type": "dark",
+    "semanticHighlighting": true,
+    "semanticTokenColors": {
+        "class:java": "#A9B7C6",
+        "type:java": "#A9B7C6",
+        "interface:java": "#A9B7C6",
+        "enum:java": "#A9B7C6",
+        "namespace:java": "#A9B7C6",
+        "method:java": "#A9B7C6",
+        "function:java": "#A9B7C6",
+        "parameter:java": "#A9B7C6",
+        "property:java": "#A9B7C6",
+        "variable:java": "#A9B7C6",
+        "annotation:java": "#BBB529",
+        "annotationType:java": "#BBB529",
+        "method.declaration:java": "#56A8F5",
+        "function.declaration:java": "#56A8F5",
+        "class:kotlin": "#A9B7C6",
+        "type:kotlin": "#A9B7C6",
+        "interface:kotlin": "#A9B7C6",
+        "enum:kotlin": "#A9B7C6",
+        "namespace:kotlin": "#A9B7C6",
+        "method:kotlin": "#A9B7C6",
+        "function:kotlin": "#A9B7C6",
+        "parameter:kotlin": "#A9B7C6",
+        "property:kotlin": "#A9B7C6",
+        "variable:kotlin": "#A9B7C6",
+        "annotation:kotlin": "#BBB529",
+        "annotationType:kotlin": "#BBB529",
+        "method.declaration:kotlin": "#56A8F5",
+        "function.declaration:kotlin": "#56A8F5"
+    },
+    "colors": {},
+    "tokenColors": [
+        {
+            "name": "Java/Kotlin - General text",
+            "scope": [
+                "source.java",
+                "source.kotlin"
+            ],
+            "settings": {
+                "foreground": "#A9B7C6"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Comments",
+            "scope": [
+                "comment.line.double-slash.java",
+                "comment.block.java",
+                "punctuation.definition.comment.java",
+                "comment.line.double-slash.kotlin",
+                "comment.block.kotlin",
+                "punctuation.definition.comment.kotlin"
+            ],
+            "settings": {
+                "foreground": "#808080",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Java - Javadoc",
+            "scope": [
+                "comment.block.javadoc",
+                "comment.block.javadoc keyword.other",
+                "comment.block.javadoc entity.name.type"
+            ],
+            "settings": {
+                "foreground": "#629755",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Java - Javadoc tags",
+            "scope": [
+                "comment.block.javadoc storage.type",
+                "comment.block.javadoc keyword"
+            ],
+            "settings": {
+                "foreground": "#629755",
+                "fontStyle": "bold italic"
+            }
+        },
+        {
+            "name": "Kotlin - KDoc",
+            "scope": [
+                "comment.block.kdoc.kotlin",
+                "comment.block.kdoc.kotlin keyword.other",
+                "comment.block.kdoc.kotlin entity.name.type"
+            ],
+            "settings": {
+                "foreground": "#629755",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Strings",
+            "scope": [
+                "string.quoted.double.java",
+                "string.quoted.single.java",
+                "string.quoted.double.kotlin",
+                "string.quoted.single.kotlin",
+                "string.template.kotlin"
+            ],
+            "settings": {
+                "foreground": "#6A8759"
+            }
+        },
+        {
+            "name": "Java/Kotlin - String escape characters",
+            "scope": [
+                "constant.character.escape.java",
+                "constant.character.escape.kotlin"
+            ],
+            "settings": {
+                "foreground": "#CC7832"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Keywords",
+            "scope": [
+                "keyword.control.java",
+                "keyword.operator.java",
+                "storage.modifier.java",
+                "storage.type.primitive.java",
+                "keyword.control.kotlin",
+                "keyword.operator.kotlin",
+                "storage.modifier.kotlin",
+                "storage.type.builtin.kotlin"
+            ],
+            "settings": {
+                "foreground": "#CC7832"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Import / Package keyword",
+            "scope": [
+                "keyword.other.import.java",
+                "keyword.other.package.java",
+                "keyword.other.import.kotlin",
+                "keyword.other.package.kotlin"
+            ],
+            "settings": {
+                "foreground": "#CC7832"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Class / Type declarations",
+            "scope": [
+                "storage.type.java",
+                "entity.name.type.java",
+                "entity.other.inherited-class.java",
+                "storage.type.kotlin",
+                "entity.name.type.kotlin",
+                "entity.other.inherited-class.kotlin"
+            ],
+            "settings": {
+                "foreground": "#A9B7C6"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Annotations",
+            "scope": [
+                "storage.type.annotation.java",
+                "punctuation.definition.annotation.java",
+                "entity.name.type.annotation.java",
+                "storage.type.annotation.kotlin",
+                "punctuation.definition.annotation.kotlin",
+                "entity.name.type.annotation.kotlin"
+            ],
+            "settings": {
+                "foreground": "#BBB529"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Boolean and null literals",
+            "scope": [
+                "constant.language.java",
+                "constant.language.kotlin"
+            ],
+            "settings": {
+                "foreground": "#CC7832",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Number literals",
+            "scope": [
+                "constant.numeric.java",
+                "constant.numeric.integer.kotlin",
+                "constant.numeric.float.kotlin",
+                "constant.numeric.long.kotlin",
+                "constant.numeric.double.kotlin"
+            ],
+            "settings": {
+                "foreground": "#6897BB"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Operators and punctuation",
+            "scope": [
+                "keyword.operator.assignment.java",
+                "keyword.operator.arithmetic.java",
+                "keyword.operator.comparison.java",
+                "keyword.operator.logical.java",
+                "punctuation.separator.java",
+                "punctuation.terminator.java",
+                "keyword.operator.assignment.kotlin",
+                "keyword.operator.arithmetic.kotlin",
+                "keyword.operator.comparison.kotlin",
+                "keyword.operator.logical.kotlin",
+                "punctuation.separator.kotlin",
+                "punctuation.terminator.kotlin"
+            ],
+            "settings": {
+                "foreground": "#A9B7C6"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Method declarations",
+            "scope": [
+                "entity.name.function.java",
+                "meta.method.identifier.java entity.name.function",
+                "entity.name.function.kotlin",
+                "meta.function.kotlin entity.name.function"
+            ],
+            "settings": {
+                "foreground": "#FFC66D"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Variables",
+            "scope": [
+                "variable.other.java",
+                "variable.parameter.java",
+                "variable.other.kotlin",
+                "variable.parameter.kotlin"
+            ],
+            "settings": {
+                "foreground": "#A9B7C6"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Constants (static final / const)",
+            "scope": [
+                "variable.other.constant.java",
+                "variable.other.constant.kotlin"
+            ],
+            "settings": {
+                "foreground": "#9876AA",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Java - Type parameters (generics)",
+            "scope": [
+                "entity.name.type.type-parameter.java",
+                "storage.type.generic.java"
+            ],
+            "settings": {
+                "foreground": "#507874"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Brackets and Braces",
+            "scope": [
+                "punctuation.bracket.java",
+                "punctuation.section.java",
+                "punctuation.bracket.kotlin",
+                "punctuation.section.kotlin"
+            ],
+            "settings": {
+                "foreground": "#A9B7C6"
+            }
+        },
+        {
+            "name": "Kotlin - String templates",
+            "scope": [
+                "punctuation.definition.template-expression.begin.kotlin",
+                "punctuation.definition.template-expression.end.kotlin",
+                "variable.other.template.kotlin"
+            ],
+            "settings": {
+                "foreground": "#CC7832"
+            }
+        },
+        {
+            "name": "Kotlin - Companion / Object / Data keywords",
+            "scope": [
+                "keyword.other.kotlin",
+                "storage.type.object.kotlin"
+            ],
+            "settings": {
+                "foreground": "#CC7832"
+            }
+        }
+    ]
+}

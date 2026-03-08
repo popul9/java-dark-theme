@@ -1,0 +1,6 @@
+.git
+.gitattributes
+.vscode
+*.md
+!README.md
+!CHANGELOG.md

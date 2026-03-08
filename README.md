@@ -1,13 +1,13 @@
 # Java Dark Theme
 
-> IntelliJ-Inspired dark theme for Java and Kotlin
+> An IntelliJ-inspired dark theme for Java and Kotlin in VS Code
 
-A carefully crafted dark color theme for Visual Studio Code that brings the familiar aesthetics of IntelliJ IDEA's Darcula theme to your Java and Kotlin development workflow.
+A carefully crafted dark color theme for Visual Studio Code, inspired by the aesthetics of IntelliJ IDEA's Darcula theme. It aims to replicate the familiar look and feel as closely as possible — but it is **not a pixel-perfect copy**. Some elements may appear slightly different due to how VS Code's TextMate and semantic token engines work. For example, Spring Boot annotations, custom annotations, and certain language-specific constructs may render with slightly different colors compared to IntelliJ. Overall, it should feel very familiar to IntelliJ users.
 
 ## Features
 
-- **Darcula-style colors** — Classic dark background (`#2B2B2B`) with soft, eye-friendly syntax highlighting
-- **Java and Kotlin-optimized** — Semantic highlighting for Java and Kotlin classes, methods, annotations, and more
+- **IntelliJ Darcula-inspired colors** — Classic dark background with soft, eye-friendly syntax highlighting
+- **Java and Kotlin-optimized** — Semantic highlighting for classes, methods, annotations, and more
 - **Annotation highlighting** — `@RestController`, `@PostMapping`, etc. in signature yellow (`#BBB529`)
 - **Keyword styling** — `public`, `private`, `return`, `class` in warm orange (`#CC7832`)
 - **String literals** — Green (`#6A8759`) just like IntelliJ
@@ -17,18 +17,18 @@ A carefully crafted dark color theme for Visual Studio Code that brings the fami
 
 ## Color Palette
 
-| Element               | Color                                                        |
-| --------------------- | ------------------------------------------------------------ |
-| Background            | `#2B2B2B` |
-| Foreground / Text     | `#A9B7C6` |
-| Keywords              | `#CC7832` |
-| Strings               | `#6A8759` |
-| Annotations           | `#BBB529` |
-| Numbers               | `#6897BB` |
-| Method declarations   | `#56A8F5` |
-| Constants             | `#9876AA` |
-| Comments              | `#808080` |
-| Javadoc               | `#629755` |
+| Element               | Color         |
+| --------------------- | ------------- |
+| Background            | `#1E1E1E`     |
+| Foreground / Text     | `#A9B7C6`     |
+| Keywords              | `#CC7832`     |
+| Strings               | `#6A8759`     |
+| Annotations           | `#BBB529`     |
+| Numbers               | `#6897BB`     |
+| Method declarations   | `#56A8F5`     |
+| Constants             | `#9876AA`     |
+| Comments              | `#808080`     |
+| Javadoc               | `#629755`     |
 
 ## Installation
 
@@ -45,6 +45,11 @@ For the best experience, add these to your `settings.json`:
 ```json
 {
   "[java]": {
+    "editor.fontFamily": "'JetBrains Mono', monospace",
+    "editor.fontLigatures": true,
+    "editor.semanticHighlighting.enabled": true
+  },
+  "[kotlin]": {
     "editor.fontFamily": "'JetBrains Mono', monospace",
     "editor.fontLigatures": true,
     "editor.semanticHighlighting.enabled": true
@@ -82,6 +87,9 @@ If you prefer not to install the extension, you can add the following directly t
             "variable:java": { "foreground": "#A9B7C6" },
             "annotation:java": { "foreground": "#BBB529" },
             "annotationType:java": { "foreground": "#BBB529" },
+            "class.annotation:java": { "foreground": "#BBB529" },
+            "type.annotation:java": { "foreground": "#BBB529" },
+            "interface.annotation:java": { "foreground": "#BBB529" },
             "method.declaration:java": { "foreground": "#56A8F5" },
             "function.declaration:java": { "foreground": "#56A8F5" },
 
@@ -97,6 +105,9 @@ If you prefer not to install the extension, you can add the following directly t
             "variable:kotlin": { "foreground": "#A9B7C6" },
             "annotation:kotlin": { "foreground": "#BBB529" },
             "annotationType:kotlin": { "foreground": "#BBB529" },
+            "class.annotation:kotlin": { "foreground": "#BBB529" },
+            "type.annotation:kotlin": { "foreground": "#BBB529" },
+            "interface.annotation:kotlin": { "foreground": "#BBB529" },
             "method.declaration:kotlin": { "foreground": "#56A8F5" },
             "function.declaration:kotlin": { "foreground": "#56A8F5" }
         }
@@ -119,9 +130,17 @@ If you prefer not to install the extension, you can add the following directly t
                     "storage.type.annotation.java",
                     "punctuation.definition.annotation.java",
                     "entity.name.type.annotation.java",
+                    "meta.declaration.annotation.java entity.name.type.class.java",
+                    "meta.declaration.annotation.java entity.name.type.java",
+                    "meta.annotation.java entity.name.type.class.java",
+                    "meta.annotation.java entity.name.type.java",
+                    "meta.annotation.java entity.name.type",
+                    "meta.annotation.java entity.name.type.interface.java",
                     "storage.type.annotation.kotlin",
                     "punctuation.definition.annotation.kotlin",
-                    "entity.name.type.annotation.kotlin"
+                    "entity.name.type.annotation.kotlin",
+                    "meta.annotation.kotlin entity.name.type.class.kotlin",
+                    "meta.annotation.kotlin entity.name.type.kotlin"
                 ],
                 "settings": { "foreground": "#BBB529" }
             },
@@ -130,7 +149,7 @@ If you prefer not to install the extension, you can add the following directly t
                     "keyword.control.java",
                     "keyword.operator.java",
                     "storage.modifier.java",
-                    "storage.type.java",
+                    "storage.type.primitive.java",
                     "keyword.control.kotlin",
                     "keyword.operator.kotlin",
                     "storage.modifier.kotlin",
@@ -141,7 +160,9 @@ If you prefer not to install the extension, you can add the following directly t
             {
                 "scope": [
                     "keyword.other.import.java",
-                    "keyword.other.import.kotlin"
+                    "keyword.other.package.java",
+                    "keyword.other.import.kotlin",
+                    "keyword.other.package.kotlin"
                 ],
                 "settings": { "foreground": "#CC7832" }
             },
@@ -159,13 +180,15 @@ If you prefer not to install the extension, you can add the following directly t
                     "constant.language.java",
                     "constant.language.kotlin"
                 ],
-                "settings": { "foreground": "#6897BB" }
+                "settings": { "foreground": "#CC7832", "fontStyle": "bold" }
             },
             {
                 "scope": [
                     "constant.numeric.java",
                     "constant.numeric.integer.kotlin",
-                    "constant.numeric.float.kotlin"
+                    "constant.numeric.float.kotlin",
+                    "constant.numeric.long.kotlin",
+                    "constant.numeric.double.kotlin"
                 ],
                 "settings": { "foreground": "#6897BB" }
             },
@@ -180,6 +203,15 @@ If you prefer not to install the extension, you can add the following directly t
     }
 }
 ```
+
+## Notes on IntelliJ Similarities & Differences
+
+This theme is **inspired by** IntelliJ IDEA's Darcula theme, but there are some known differences:
+
+- **Spring Boot & framework annotations** (e.g. `@SpringBootApplication`, `@Autowired`) may appear white instead of yellow in some situations, depending on how the Java language server resolves them.
+- **Custom annotations** you define yourself may not always be highlighted in yellow — this depends on VS Code's semantic token support.
+- **Method call colors** differ slightly: IntelliJ does not color regular method calls, but some are colored differently here depending on the TextMate grammar resolution.
+- **Overall feel** is very close to IntelliJ, especially for standard Java/Kotlin syntax.
 
 ## Screenshots
 

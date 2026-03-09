@@ -2,7 +2,7 @@
     "name": "java-dark-theme",
     "displayName": "Java Dark Theme",
     "description": "IntelliJ-inspired dark theme for Java and Kotlin",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "publisher": "heejunnet",
     "license": "MIT",
     "engines": {

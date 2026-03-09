@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/example")
 public class ExampleController {
 
-    public ExampleController() {
+    private final VerificationRequestService verificationRequestService;
 
+    public ExampleController() {
+        verificationRequestService.getExample();
     }
 
     @GetMapping

@@ -11,8 +11,13 @@
         "method:java": "#A9B7C6",
         "function:java": "#A9B7C6",
         "parameter:java": "#A9B7C6",
-        "property:java": "#A9B7C6",
+        "property:java": {
+            "foreground": "#9876AA"
+        },
         "variable:java": "#A9B7C6",
+        "variable.declaration:java": {
+            "foreground": "#9876AA"
+        },
         "annotation:java": "#BBB529",
         "annotationType:java": "#BBB529",
         "class.annotation:java": "#BBB529",
@@ -28,8 +33,13 @@
         "method:kotlin": "#A9B7C6",
         "function:kotlin": "#A9B7C6",
         "parameter:kotlin": "#A9B7C6",
-        "property:kotlin": "#A9B7C6",
+        "property:kotlin": {
+            "foreground": "#9876AA"
+        },
         "variable:kotlin": "#A9B7C6",
+        "variable.declaration:kotlin": {
+            "foreground": "#9876AA"
+        },
         "annotation:kotlin": "#BBB529",
         "annotationType:kotlin": "#BBB529",
         "class.annotation:kotlin": "#BBB529",
@@ -422,7 +432,21 @@
             }
         },
         {
-            "name": "Java/Kotlin - Variables",
+            "name": "Java/Kotlin - Instance fields (purple like IntelliJ)",
+            "scope": [
+                "variable.other.definition.java",
+                "variable.other.field.java",
+                "meta.class.body.java variable.other.java",
+                "variable.other.property.kotlin",
+                "variable.other.field.kotlin",
+                "meta.class.body.kotlin variable.other.kotlin"
+            ],
+            "settings": {
+                "foreground": "#9876AA"
+            }
+        },
+        {
+            "name": "Java/Kotlin - Local variables and parameters",
             "scope": [
                 "variable.other.java",
                 "variable.parameter.java",

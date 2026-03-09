@@ -11,13 +11,8 @@
         "method:java": "#A9B7C6",
         "function:java": "#A9B7C6",
         "parameter:java": "#A9B7C6",
-        "property:java": {
-            "foreground": "#9876AA"
-        },
+        "property:java": "#A9B7C6",
         "variable:java": "#A9B7C6",
-        "variable.declaration:java": {
-            "foreground": "#9876AA"
-        },
         "annotation:java": "#BBB529",
         "annotationType:java": "#BBB529",
         "class.annotation:java": "#BBB529",
@@ -33,13 +28,8 @@
         "method:kotlin": "#A9B7C6",
         "function:kotlin": "#A9B7C6",
         "parameter:kotlin": "#A9B7C6",
-        "property:kotlin": {
-            "foreground": "#9876AA"
-        },
+        "property:kotlin": "#A9B7C6",
         "variable:kotlin": "#A9B7C6",
-        "variable.declaration:kotlin": {
-            "foreground": "#9876AA"
-        },
         "annotation:kotlin": "#BBB529",
         "annotationType:kotlin": "#BBB529",
         "class.annotation:kotlin": "#BBB529",
@@ -286,7 +276,7 @@
                 "string.template.kotlin"
             ],
             "settings": {
-                "foreground": "#79A977"
+                "foreground": "#6A8759"
             }
         },
         {
@@ -312,7 +302,7 @@
                 "storage.type.builtin.kotlin"
             ],
             "settings": {
-                "foreground": "#C08A50"
+                "foreground": "#CC7832"
             }
         },
         {
@@ -324,7 +314,7 @@
                 "keyword.other.package.kotlin"
             ],
             "settings": {
-                "foreground": "#C08A50"
+                "foreground": "#CC7832"
             }
         },
         {
@@ -370,7 +360,7 @@
                 "constant.language.kotlin"
             ],
             "settings": {
-                "foreground": "#C08A50",
+                "foreground": "#CC7832",
                 "fontStyle": "bold"
             }
         },
@@ -496,7 +486,7 @@
                 "variable.other.template.kotlin"
             ],
             "settings": {
-                "foreground": "#C08A50"
+                "foreground": "#CC7832"
             }
         },
         {
@@ -506,7 +496,7 @@
                 "storage.type.object.kotlin"
             ],
             "settings": {
-                "foreground": "#C08A50"
+                "foreground": "#CC7832"
             }
         },
         {
@@ -518,7 +508,7 @@
                 "variable.language.super.kotlin"
             ],
             "settings": {
-                "foreground": "#C08A50"
+                "foreground": "#CC7832"
             }
         },
         {
@@ -532,7 +522,7 @@
                 "keyword.control.conditional.kotlin"
             ],
             "settings": {
-                "foreground": "#C08A50"
+                "foreground": "#CC7832"
             }
         },
         {
@@ -565,7 +555,7 @@
                 "meta.template.expression.kotlin"
             ],
             "settings": {
-                "foreground": "#79A977"
+                "foreground": "#6A8759"
             }
         }
     ]

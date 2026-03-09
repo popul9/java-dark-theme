@@ -2,11 +2,11 @@
 
 > An IntelliJ-inspired dark theme for Java and Kotlin in VS Code
 
-A carefully crafted dark color theme for Visual Studio Code, inspired by the aesthetics of IntelliJ IDEA's Darcula theme. It aims to replicate the familiar look and feel as closely as possible — but it is **not a pixel-perfect copy**. Some elements may appear slightly different due to how VS Code's TextMate and semantic token engines work. For example, Spring Boot annotations, custom annotations, and certain language-specific constructs may render with slightly different colors compared to IntelliJ. Overall, it should feel very familiar to IntelliJ users.
+A carefully crafted dark color theme for Visual Studio Code, inspired by the aesthetics of IntelliJ IDEA's Dark theme. It aims to replicate the familiar look and feel as closely as possible — but it is **not a pixel-perfect copy**. Some elements may appear slightly different due to how VS Code's TextMate and semantic token engines work. For example, Spring Boot annotations, custom annotations, and certain language-specific constructs may render with slightly different colors compared to IntelliJ. Overall, it should feel very familiar to IntelliJ users.
 
 ## Features
 
-- **IntelliJ Darcula-inspired colors** — Classic dark background with soft, eye-friendly syntax highlighting
+- **IntelliJ Dark-inspired colors** — Classic dark background with soft, eye-friendly syntax highlighting
 - **Java and Kotlin-optimized** — Semantic highlighting for classes, methods, annotations, and more
 - **Annotation highlighting** — `@RestController`, `@PostMapping`, etc. in signature yellow (`#BBB529`)
 - **Keyword styling** — `public`, `private`, `return`, `class` in warm orange (`#CC7832`)
@@ -206,7 +206,7 @@ If you prefer not to install the extension, you can add the following directly t
 
 ## Notes on IntelliJ Similarities & Differences
 
-This theme is **inspired by** IntelliJ IDEA's Darcula theme, but there are some known differences:
+This theme is **inspired by** IntelliJ IDEA's Dark theme, but there are some known differences:
 
 - **Spring Boot & framework annotations** (e.g. `@SpringBootApplication`, `@Autowired`) may appear white instead of yellow in some situations, depending on how the Java language server resolves them.
 - **Custom annotations** you define yourself may not always be highlighted in yellow — this depends on VS Code's semantic token support.

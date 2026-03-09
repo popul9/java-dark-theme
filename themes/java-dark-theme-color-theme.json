@@ -448,9 +448,7 @@
         {
             "name": "Java/Kotlin - Local variables and parameters",
             "scope": [
-                "variable.other.java",
                 "variable.parameter.java",
-                "variable.other.kotlin",
                 "variable.parameter.kotlin"
             ],
             "settings": {

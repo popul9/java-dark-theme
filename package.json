@@ -2,7 +2,7 @@
     "name": "java-dark-theme",
     "displayName": "Java Dark Theme",
     "description": "IntelliJ-inspired dark theme for Java and Kotlin",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "publisher": "heejunnet",
     "license": "MIT",
     "engines": {
@@ -19,7 +19,7 @@
         "intellij",
         "darcula"
     ],
-    "icon": "icon.png",
+    "icon": "icon128.webp",
     "galleryBanner": {
         "color": "#2B2B2B",
         "theme": "dark"

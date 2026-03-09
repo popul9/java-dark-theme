@@ -3,38 +3,40 @@
     "type": "dark",
     "semanticHighlighting": true,
     "semanticTokenColors": {
-        "class:java": "#A9B7C6",
-        "type:java": "#A9B7C6",
-        "interface:java": "#A9B7C6",
-        "enum:java": "#A9B7C6",
-        "namespace:java": "#A9B7C6",
         "method:java": "#A9B7C6",
         "function:java": "#A9B7C6",
         "parameter:java": "#A9B7C6",
-        "property:java": "#A9B7C6",
         "variable:java": "#A9B7C6",
+        "property:java": "#9876AA",
+        "field:java": "#9876AA",
+        "property.static:java": {
+            "foreground": "#9876AA",
+            "italic": true
+        },
+        "field.static:java": {
+            "foreground": "#9876AA",
+            "italic": true
+        },
         "annotation:java": "#BBB529",
         "annotationType:java": "#BBB529",
-        "class.annotation:java": "#BBB529",
-        "type.annotation:java": "#BBB529",
-        "interface.annotation:java": "#BBB529",
         "method.declaration:java": "#56A8F5",
         "function.declaration:java": "#56A8F5",
-        "class:kotlin": "#A9B7C6",
-        "type:kotlin": "#A9B7C6",
-        "interface:kotlin": "#A9B7C6",
-        "enum:kotlin": "#A9B7C6",
-        "namespace:kotlin": "#A9B7C6",
         "method:kotlin": "#A9B7C6",
         "function:kotlin": "#A9B7C6",
         "parameter:kotlin": "#A9B7C6",
-        "property:kotlin": "#A9B7C6",
         "variable:kotlin": "#A9B7C6",
+        "property:kotlin": "#9876AA",
+        "field:kotlin": "#9876AA",
+        "property.static:kotlin": {
+            "foreground": "#9876AA",
+            "italic": true
+        },
+        "field.static:kotlin": {
+            "foreground": "#9876AA",
+            "italic": true
+        },
         "annotation:kotlin": "#BBB529",
         "annotationType:kotlin": "#BBB529",
-        "class.annotation:kotlin": "#BBB529",
-        "type.annotation:kotlin": "#BBB529",
-        "interface.annotation:kotlin": "#BBB529",
         "method.declaration:kotlin": "#56A8F5",
         "function.declaration:kotlin": "#56A8F5"
     },
@@ -457,13 +459,21 @@
             }
         },
         {
-            "name": "Java - Type parameters (generics)",
+            "name": "Java - Type parameters (T, E, K, V declarations)",
             "scope": [
-                "entity.name.type.type-parameter.java",
-                "storage.type.generic.java"
+                "entity.name.type.type-parameter.java"
             ],
             "settings": {
                 "foreground": "#507874"
+            }
+        },
+        {
+            "name": "Java - Generic type arguments (String, Integer in List<String>)",
+            "scope": [
+                "storage.type.generic.java"
+            ],
+            "settings": {
+                "foreground": "#A9B7C6"
             }
         },
         {
